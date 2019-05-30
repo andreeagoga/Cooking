@@ -5,7 +5,7 @@
   <meta name="description" content="Cook">
   <meta name="keywords" content="Recipe, cook, cakes, food">
   <meta name="author" content="Andreea Ioana">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=0">
   <!--  <meta http-equiv="refresh" content="5">-->
   <link type="text/css" rel="stylesheet" href="reset.css"/>
   <link type="text/css" rel="stylesheet" href="style.css"/>
@@ -30,7 +30,7 @@
       </li>
       <li class="item">
         <a class="far fa-calendar-check" href="#">
-          <span class="item-text">The recipes list</span>
+          <span class="item-text">The A-list</span>
         </a>
       </li>
       <li class="item">
@@ -44,17 +44,17 @@
         </a>
       </li>
     </ul>
-    <div>
+    <div class="container-contact">
       <div>
         <p class="contact">Latest tweet</p>
-        <p>Follow our latest news on Twitter.</p>
+        <p class="contact-text">Follow our latest news on Twitter.</p>
         <button class="fab fa-twitter">
           <span>Join the conversation</span>
         </button>
       </div>
       <div>
         <p class="contact">Let's be friends</p>
-        <p>For weekly finds, community recommendations, and more, like us on Facebook.</p>
+        <p class="contact-text">For weekly finds, community recommendations, and more, like us on Facebook.</p>
         <button class="fab fa-facebook-f">
           <span>Join the Community</span>
         </button>
@@ -63,9 +63,11 @@
   </div>
   <div class="container image">
     <img class="main-image" src="Images/main-image.jpg" alt="cooking image">
-    <span class="on-image-text white-block">What's cooking?</span>
-    <span class="on-image-text black-block">Browse our gallery for more photos</span>
-    <span class="photo-by">by Andreea Goga</span>
+    <div>
+      <span class="on-image-text white-block">What's cooking?</span>
+      <span class="on-image-text black-block">Browse our gallery for more photos</span>
+      <span class="photo-by">by Andreea Goga</span>
+    </div>
     <ul class="navbar navbar-new">
       <li class="item">
         <a href="#" class="item-text">Ingredients<br><span class="item-small-text">Different tastes</span></a>
@@ -91,40 +93,50 @@
     <div class="article">
       <img class="article-image" src="Images/cooking-woman.jpg" alt="Cooking woman">
       <span class="article-title">What do you want to cook</span>
-      <span class="article-text">Cooking or cookery is the art, technology, science and craft of preparing food for consumption. Cooking techniques and ingredients vary widely across the world, from grilling food over an open fire to using electric stoves, to baking in various types of ovens, reflecting unique environmental, economic, and cultural traditions and trends. The ways or types of cooking also depend on the skill and type of training an individual cook has. Cooking is done both by people in their own dwellings and by professional cooks and chefs in restaurants and other food establishments. Cooking can also occur through chemical reactions without the presence of heat, such as in ceviche, a traditional South American dish where fish is cooked with the acids in lemon or lime juice.</span><br>
-      <span class="article-date">20/12/2018</span>
-      <a href="#">Read >></a>
+      <div class="article-text">Cooking or cookery is the art, technology, science and craft of preparing food for consumption.</div>
+      <div class="article-footer">
+        <span class="article-date">December 20, 2018/</span>
+        <a class="read-more" href="#">
+          Read <span class="more"> >></span></a>
+      </div>
     </div>
     <div class="article">
       <img class="article-image" src="Images/sushi.jpg" alt="Sushi">
       <span class="article-title">How to cook sushi</span>
-      <span class="article-text">Sushi este un preparat servit cu orez oțetit sau acrit (鮨飯 sushi-meshi?), combinat cu diverse alte ingrediente. Principalul ingredient este orezul (acrit cu oțet) combinat cu diferite alimente , gătite sau in stare crudă, cel mai adesea pește crud.alte ingrediente (ネタ neta?).Sushi este o mâncare relativ nouă chiar și în Japonia. A fost gătitită pentru prima oară la începutul secolului al XIX -lea. Înainte vreme, orezul acrit cu oțet era folosit ca metodă de conservare prin fermentație a peștelui, peștele fiind învelit complet în astfel de orez.Exista diverse tipuri de sushi: rulouri infășurate in foi de alge marine presate, bucăți mici de orez frământate de mână și servite cu pește crud sau icre, bucăți de pește crud presărate peste o farfurie cu orez. Există și variante de sushi în care in loc de orez se folosește tofu.</span>
-      <span class="article-date">15/01/2019</span>
-      <a href="#">Read >></a>
+      <span class="article-text">Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, vegetables, and occasionally tropical fruits.</span><br>
+      <div class="article-footer">
+        <span class="article-date">May 15, 2019/</span>
+        <a class="read-more" href="#">
+          Read <span class="more"> >></span></a>
+      </div>
     </div>
     <div class="article">
       <img class="article-image" src="Images/soup.jpg" alt="Soup">
       <span class="article-title">How to cook soups</span>
-      <span class="article-text">Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients of meat or vegetables with stock, or water. Hot soups are additionally characterized by boiling solid ingredients in liquids in a pot until the flavors are extracted, forming a broth. Soups are similar to stews, and in some cases there may not be a clear distinction between the two; however, soups generally have more liquid (broth) than stews.</span>
-      <span class="article-date">20/02/2019</span>
-      <a href="#">Read >></a>
+      <span class="article-text">Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients of meat or vegetables with stock, or water.</span><br>
+      <div class="article-footer">
+        <span class="article-date">April 2, 2019/</span>
+        <a class="read-more" href="#">
+          Read <span class="more"> >></span></a>
+      </div>
     </div>
     <div class="article">
       <img class="article-image" src="Images/salad.jpg" alt="Salad">
       <span class="article-title">What salad to choose</span>
-      <span class="article-text">A salad is a dish consisting of a mixture of small pieces of food, usually vegetables.[1][2] However, different varieties of salad may contain virtually any type of ready-to-eat food. Salads are typically served at room temperature or chilled, with notable exceptions such as south German potato salad which is served warm.
-
-Garden salads use a base of leafy greens such as lettuce, arugula/rocket, kale or spinach; they are common enough that the word salad alone often refers specifically to garden salads. Other types include bean salad, tuna salad, fattoush, Greek salad (vegetable based, but without leafy greens), and sōmen salad (a noodle-based salad). The sauce used to flavor a salad is commonly called a salad dressing; most salad dressings are based on either a mixture of oil and vinegar or a fermented milk product like kefir.</span>
-      <span class="article-date">01/04/2019</span>
-      <a href="#">Read >></a>
+      <span class="article-text">A salad is a dish consisting of a mixture of small pieces of food, usually vegetables. However, different varieties of salad may contain virtually any type of ready-to-eat food.</span><br>
+      <div class="article-footer">
+        <span class="article-date">January 5, 2019/</span>
+        <a class="read-more" href="#">
+          Read <span class="more"> >></span></a>
+      </div>
     </div>
   </div>
  <div class="container footer">
    <div class="copyright">
-     <a href="#">Privacy politics|</a>
-     <a href="#">Terms of use|</a>
-     <a href="#">Contact</a>
-     <span>&copy; 2019 All rights reserved</span>
+     <a class="copyright-link" href="#">Privacy politics|</a>
+     <a class="copyright-link" href="#">Terms of use|</a>
+     <a class="copyright-link" href="#">Contact</a><br>
+     <span class="rights">&copy; 2019 All rights reserved</span>
    </div>
    <div class="icons">
      <a title="twitter" class="fab fa-twitter"></a>
