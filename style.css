@@ -11,6 +11,7 @@ a {
 .navigation-bar {
   float: left;
   width: 17%;
+  position: absolute;
 }
 
 .logo {
@@ -70,14 +71,17 @@ a {
   line-height: 1.5rem;
   font-size: 0.7rem;
 }
-
+.container-right {
+  padding-left: 20%;
+}
 .container {
-  width: 83%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   float: left;
 }
 .image {
   position: relative;
+  height: 50%;
 }
 
 .main-image {
@@ -87,7 +91,7 @@ a {
   z-index: -1;
 }
 
-.on-image-text, .photo-by, .main-image {
+.on-image-text, .photo-by {
   position: absolute;
 }
 
@@ -96,7 +100,7 @@ a {
   color: #000;
   padding: 1rem;
   font-size: 1.5rem;
-  top: 290px;
+  bottom: 120px;
 }
 
 .black-block {
@@ -104,23 +108,21 @@ a {
   color: #f1eff6;
   padding: 0.8rem;
   font-size: 1.2rem;
-  top: 340px;
+  bottom: 80px;
 }
 
 .photo-by {
-  top: 420px;
   right:5px;
   background-color: #a3a1a8;
   color: #5e5e61;
   padding: 0.15rem;
+  bottom: 10px;
 }
 
 .navbar-new {
-  float: left;
-  display: block;
-  position: relative;
-  top: 445px;
   width: 100%;
+  height: 100%;
+  float: left;
 }
 
 .navbar-new .item {
@@ -128,9 +130,13 @@ a {
   background-color: rgba(50,170,152,0.11);
   display: inline-block;
   float: left;
-  width: 24.9%;
+  width: 24.93%;
   margin-right: 0.05rem;
   box-sizing: border-box;
+}
+
+.navbar-new .item:nth-child(4){
+  margin-right: 0;
 }
 
 
@@ -162,15 +168,14 @@ a {
 .send-box {
   border-top: 1.2px dashed rgba(193,191,198,0.32);
   border-bottom: 1.2px dashed rgba(193,191,198,0.32);
-  float: left;
   padding-left: 2rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  margin-top: 1rem;
   margin-bottom: 1.8rem;
-  position: relative;
-  top: 460px;
-  width: 80%;
+  margin-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
 }
 
 .send-box i, span, input {
@@ -221,11 +226,9 @@ a {
 
 .article {
   float: left;
-  width: 21.5%;
+  width: 22%;
   height: 30%;
   margin-right: 4%;
-  position: relative;
-  top: 460px;
 }
 
 .article:nth-child(4) {
@@ -237,6 +240,7 @@ a {
   height: 10rem;
   border: 1px solid #ddd;
   padding: 0.7rem;
+  box-sizing: border-box;
 }
 
 .article-title {
@@ -287,8 +291,6 @@ a {
   width: 100%;
   border-top: 2px solid #b7b7b4;
   margin-top: 3rem;
-  position: relative;
-  top: 240px;
 }
 
 .copyright {
@@ -324,26 +326,55 @@ a {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 10px;
+    font-size: 13px;
   }
   .navigation-bar {
-    width: 90%;
-  }
-  .navbar {
-    display: inline-block;
+    width: 100%;
+    position: relative;
   }
 
   .logo {
     width: 15%;
+    display: inline-block;
+    position: absolute;
+  }
+
+  .navbar {
+    display: inline-block;
+    width: 85%;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 15%;
+
   }
   .item {
     float: right;
     display: inline-block;
     width: 15%;
     text-align: center;
+    height: 100%;
+    vertical-align: middle;
+    padding-right: 5%;
+    box-sizing: border-box;
+  }
+
+  .fas, .far {
+    font-size: 2.5rem;
   }
   .container-contact {
     display: none;
+  }
+
+  .container-right {
+    padding-left: 0;
+  }
+  .image {
+    width: 100%;
+  }
+
+  .navbar-new {
+    width: 100%;
+    padding-left: 0;
   }
   
 }
