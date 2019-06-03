@@ -9,41 +9,46 @@
   <!--  <meta http-equiv="refresh" content="5">-->
   <link type="text/css" rel="stylesheet" href="reset.css"/>
   <link type="text/css" rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="icon" href="Images/logo.png"/>
 
   <title>Cooking</title>
 </head>
 <body>
 <div class="navigation-bar">
-  <img class="logo" src="Images/logo.png" alt="logo">
-  <ul class="navbar">
-    <li class="item">
-      <a class="fas fa-utensils" href="#">
-        <span class="item-text">Ingredients</span>
-      </a>
-    </li>
-    <li class="item">
-      <a class="fas fa-book" href="#">
-        <span class="item-text">Blog</span>
-      </a>
-    </li>
-    <li class="item">
-      <a class="far fa-calendar-check" href="#">
-        <span class="item-text">The A-list</span>
-      </a>
-    </li>
-    <li class="item">
-      <a class="fas fa-camera" href="#">
-        <span class="item-text">Gallery</span>
-      </a>
-    </li>
-    <li class="item">
-      <a class="fas fa-address-book" href="#">
-        <span class="item-text">Contact</span>
-      </a>
-    </li>
-  </ul>
+  <div class="logo-nav">
+    <img class="logo" src="Images/logo.png" alt="logo">
+  </div>
+  <div class="list-nav">
+    <ul class="navbar">
+      <li class="item">
+        <a class="fas fa-utensils" href="#">
+          <span class="item-text">Ingredients</span>
+        </a>
+      </li>
+      <li class="item">
+        <a class="fas fa-book" href="#">
+          <span class="item-text">Blog</span>
+        </a>
+      </li>
+      <li class="item">
+        <a class="far fa-calendar-check" href="#">
+          <span class="item-text">The A-list</span>
+        </a>
+      </li>
+      <li class="item">
+        <a class="fas fa-camera" href="#">
+          <span class="item-text">Gallery</span>
+        </a>
+      </li>
+      <li class="item">
+        <a class="fas fa-address-book" href="#">
+          <span class="item-text">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </div>
   <div class="container-contact">
     <div>
       <p class="contact">Latest tweet</p>
@@ -61,6 +66,9 @@
     </div>
   </div>
 </div>
+<div class="logo-hidden">
+  <img class="logo-mobile" src="Images/logo.png" alt="logo">
+</div>
 <div class="container-right">
   <div class="container image">
     <img class="main-image" src="Images/main-image.jpg" alt="cooking image">
@@ -76,7 +84,7 @@
         <a href="#" class="item-text">Ingredients<br><span class="item-small-text">Different tastes</span></a>
       </li>
       <li class="item">
-        <a href="#"class="item-text">Blog<br><span class="item-small-text">Different tastes</span></a>
+        <a href="#" class="item-text">Blog<br><span class="item-small-text">Different tastes</span></a>
       </li>
       <li class="item">
         <a href="#" class="item-text">The recipes list<br><span class="item-small-text">Different tastes</span></a>
@@ -88,7 +96,7 @@
   </div>
   <div class="send-box">
     <i class="far fa-envelope"></i>
-    <span class="sent-text">Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, <br>and news, delivered weekly to your inbox.</span>
+    <span class="sent-text">Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</span>
     <input type="text" name="email" placeholder="Email">
     <input type="submit" value="Subscribe">
   </div>
@@ -96,7 +104,9 @@
     <div class="article">
       <img class="article-image" src="Images/cooking-woman.jpg" alt="Cooking woman">
       <span class="article-title">What do you want to cook</span>
-      <div class="article-text">Cooking or cookery is the art, technology, science and craft of preparing food for consumption.</div>
+      <div class="article-text">Cooking or cookery is the art, technology, science and craft of preparing food for
+        consumption.
+      </div>
       <div class="article-footer">
         <span class="article-date">December 20, 2018/</span>
         <a class="read-more" href="#">
