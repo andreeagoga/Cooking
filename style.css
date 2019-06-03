@@ -567,6 +567,9 @@ a {
     margin-top: 13%;
   }
 
+  .main-image {
+    height: 20rem;
+  }
   .white-block {
     font-size: 1.3rem;
     bottom: 2.3rem;
@@ -598,7 +601,10 @@ a {
   }
 
   .article {
-    width: 94%;
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
   }
 
   .article .article-image {
