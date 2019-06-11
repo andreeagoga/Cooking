@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Cook">
@@ -7,16 +7,16 @@
   <meta name="author" content="Andreea Ioana">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=0">
   <!--  <meta http-equiv="refresh" content="5">-->
-  <link type="text/css" rel="stylesheet" href="reset.css"/>
-  <link type="text/css" rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="reset.css"/>
+  <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="icon" href="Images/logo.png"/>
-
   <title>Cooking</title>
 </head>
 <body>
-<div class="navigation-bar">
+<section>
+<nav>
   <div class="logo-nav">
     <img class="logo" src="Images/logo.png" alt="logo">
   </div>
@@ -70,8 +70,9 @@
       </button>
     </div>
   </div>
-</div>
-<div class="container-right">
+</nav>
+</section>
+<section class="container-right">
   <div class="container image">
     <img class="main-image" src="Images/main-image.jpg" alt="cooking image">
     <div>
@@ -110,67 +111,67 @@
       </li>
     </ul>
   </div>
-  <div class="send-box">
+  <address role="form">
     <i class="far fa-envelope"></i>
     <span class="sent-text">Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</span>
     <input type="text" name="email" placeholder="Email">
-    <input type="submit" value="Subscribe">
-  </div>
-  <div class="container articles">
-    <div class="article">
-      <div class="article-header">
+    <button type="button">Subscribe</button>
+  </address>
+  <section class="container articles">
+    <article>
+      <header>
         <img class="article-image" src="Images/cooking-woman.jpg" alt="Cooking woman">
         <span class="article-title">What do you want to cook</span>
-      </div>
+      </header>
       <div class="article-text">Cooking or cookery is the art, technology, science and craft of preparing food for
         consumption.
       </div>
-      <div class="article-footer">
+      <footer>
         <span class="article-date">December 20, 2018/</span>
         <a class="read-more" href="#">
           Read <span class="more"> >></span></a>
-      </div>
-    </div>
-    <div class="article">
-      <div class="article-header">
+      </footer>
+    </article>
+    <article>
+      <header>
         <img class="article-image" src="Images/sushi.jpg" alt="Sushi">
         <span class="article-title">How to cook sushi</span>
-      </div>
+      </header>
       <span class="article-text">Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, vegetables, and occasionally tropical fruits.</span><br>
-      <div class="article-footer">
+      <footer>
         <span class="article-date">May 15, 2019/</span>
         <a class="read-more" href="#">
           Read <span class="more"> >></span></a>
-      </div>
-    </div>
-    <div class="article">
-      <div class="article-header">
+      </footer>
+    </article>
+    <article>
+      <header>
         <img class="article-image" src="Images/soup.jpg" alt="Soup">
         <span class="article-title">How to cook soups</span>
-      </div>
+      </header>
       <span class="article-text">Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients of meat or vegetables with stock, or water.</span><br>
-      <div class="article-footer">
+      <footer>
         <span class="article-date">April 2, 2019/</span>
         <a class="read-more" href="#">
           Read <span class="more"> >></span></a>
-      </div>
-    </div>
-    <div class="article">
-      <div class="article-header">
+      </footer>
+    </article>
+    <article>
+      <header>
         <img class="article-image" src="Images/salad.jpg" alt="Salad">
         <span class="article-title">What salad to choose</span>
-      </div>
+      </header>
       <span class="article-text">A salad is a dish consisting of a mixture of small pieces of food, usually vegetables. However, different varieties of salad may contain virtually any type of ready-to-eat food.</span><br>
-      <div class="article-footer">
+      <footer>
         <span class="article-date">January 5, 2019/</span>
         <a class="read-more" href="#">
           Read <span class="more"> >></span></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container footer">
-  <div class="copyright">
+      </footer>
+    </article>
+  </section>
+</section>
+<footer class="container">
+  <div role="contentinfo" class="copyright">
     <a class="copyright-link" href="#">Privacy policy|</a>
     <a class="copyright-link" href="#">Terms of use|</a>
     <a class="copyright-link" href="#">Contact</a><br>
@@ -181,6 +182,6 @@
     <a title="facebook" class="fab fa-facebook-f"></a>
     <a title="rss" class=" fab fas fa-wifi"></a>
   </div>
-</div>
+</footer>
 </body>
 </html>

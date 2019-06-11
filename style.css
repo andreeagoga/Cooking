@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 
-.navigation-bar {
+nav {
   float: left;
   width: 17%;
   position: absolute;
@@ -211,10 +211,10 @@ a {
 }
 
 .navbar-new .item input:checked + label {
-  background-color: rgba(0,118,102,0.32);
+  background-color: rgba(101,219,150,0.32);
 }
 
-.send-box {
+address {
   border-top: 1.2px dashed rgba(193,191,198,0.32);
   border-bottom: 1.2px dashed rgba(193,191,198,0.32);
   padding-left: 2rem;
@@ -227,11 +227,11 @@ a {
   float: left;
 }
 
-.send-box i, span, input {
+address i, span, input {
   display: inline-block;
 }
 
-.send-box .sent-text {
+address .sent-text {
   font-size: 0.7rem;
   padding-left: 1rem;
   color: #000000;
@@ -247,14 +247,14 @@ a {
   height: 100%;
 }
 
-.send-box .far {
+address .far {
   font-size: 2.5rem;
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0;
 }
 
-.send-box [name="email"] {
+address [name="email"] {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding-left: 0.2rem;
@@ -263,7 +263,7 @@ a {
   height: 1.5rem;
 }
 
-.send-box [type="submit"] {
+address [type="button"] {
   border-radius: 5px;
   width: 10%;
   padding-top: 0.2rem;
@@ -273,18 +273,18 @@ a {
   font-size: 0.8rem;
 }
 
-.article {
+article {
   float: left;
   width: 22%;
   height: 30%;
   margin-right: 4%;
 }
 
-.article:last-child {
+article:last-child {
   margin-right: 0;
 }
 
-.article .article-image {
+article .article-image {
   width: 100%;
   height: 10rem;
   border: 1px solid #ddd;
@@ -298,11 +298,11 @@ a {
   margin: 1.4rem 0;
 }
 
-.article .article-header:hover .article-image {
+article header:hover .article-image {
   opacity: 0.8;
 }
 
-.article .article-header:hover .article-title {
+article header:hover .article-title {
   color: rgba(241,99,7,0.77);
 }
 
@@ -311,9 +311,10 @@ a {
   font-size: 0.8rem;
 }
 
-.article-footer {
+article footer {
   margin-top: 1rem;
   font-size: 0.8rem;
+  border-top: none;
 }
 
 .article-date {
@@ -344,7 +345,7 @@ a {
   background-color: rgba(71,189,139,0.31);
 }
 
-.footer {
+footer {
   width: 100%;
   border-top: 2px solid #b7b7b4;
   margin-top: 3rem;
@@ -393,7 +394,7 @@ a {
     margin-top: 2%;
   }
 
-  .navigation-bar {
+  nav {
     width: 100%;
     position: relative;
   }
@@ -485,20 +486,20 @@ a {
     font-size: 12px;
   }
 
-  .send-box .sent-text {
+  address .sent-text {
     width: 40%;
   }
 
-  .send-box [type="email"] {
+  address [type="email"] {
     width: 35%;
   }
 
-  .send-box [type="submit"] {
+  address [type="button"] {
     width: 12%;
     padding: 1%;
   }
 
-  .article .article-image {
+  article .article-image {
     height: 7rem;
   }
 
@@ -515,7 +516,7 @@ a {
     margin: auto;
   }
 
-  .navigation-bar {
+  nav {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -578,27 +579,28 @@ a {
     margin-right: 3%;
   }
 
-  .article {
+  article {
     width: 45%;
     float: left;
     margin-bottom: 2rem;
   }
 
-  .article .article-image {
+  article .article-image {
     height: 15rem;
   }
 
-  .article:nth-child(2){
+  article:nth-child(2){
     margin-right: 0;
   }
 
-  .article:nth-child(4){
+  article:nth-child(4){
     margin-right: 0;
   }
 
-  .footer {
+  footer {
     margin: 0 3% 3% 3%;
     width: 94%;
+
   }
 }
 
@@ -641,28 +643,28 @@ a {
     bottom: -1.5rem;
   }
 
-  .send-box .sent-text {
+  address .sent-text {
     width: 80%;
   }
 
-  .send-box [type="text"] {
+  address [type="text"] {
     width: 50%;
     margin-top: 1rem;
     margin-left: 13%;
   }
 
-  .send-box [type="submit"] {
+  address [type="button"] {
     width: 5rem;
   }
 
-  .article {
+  article {
     width: 85%;
     margin-left: 5%;
     margin-right: 5%;
     box-sizing: border-box;
   }
 
-  .article .article-image {
+  article .article-image {
     height: 20rem;
   }
 }
